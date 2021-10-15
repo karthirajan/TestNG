@@ -1,0 +1,57 @@
+TestNG - Test Driven Development
+---------------------------------
+Test cases - Excel
+
+Advantages / Features:
+--------------------- 
+TestNG will generate default html report. (test-output)
+we can set priorities in test cases (Test case level)
+we can group the test cases easily
+data provider is possible in testNG
+we can pass parameters to our test scripts.
+parallel and crossbrowser execution is possible in testng.
+we can rerun the failure test cases automatically.
+
+Annotations:
+-----------
+@BeforeSuite
+@BeforeClass
+@BeforeMethod
+@BeforeGroup
+@BeforeTest
+@Test
+@AfterTest
+@AfterGroup
+@AfterMethod
+@AfterClass
+@AfterSuite
+@DataProvider
+@Parameter
+
+Execution Order:
+---------------
+@BeforeClass
+@BeforeMethod
+@Test
+@AfterMethod
+@AfterClass
+
+Test Level
+-----------
+Priority
+group
+invocation count
+enabled
+
+Assert:
+-------
+Hard & Soft
+
+AssertTrue
+AssertEquals
+
+To Rerun failure test cases:
+----------------------------
+2 Interface
+IRetryAnalyzer (retry) ----> It is for Known failure test cases
+IAnnotationTransformer (transform) ----> It is for unknown test cases
