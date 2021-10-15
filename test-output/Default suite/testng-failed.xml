@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.task.Flipkart">
+        <methods>
+          <include name="login"/>
+          <include name="windows"/>
+          <include name="afterClass"/>
+          <include name="afterMethod"/>
+          <include name="getText"/>
+          <include name="beforeClass"/>
+          <include name="search" invocation-numbers="0"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.task.Flipkart -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
