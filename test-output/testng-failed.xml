@@ -1,20 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite name="Failed suite [Suite]">
+  <parameter name="browser" value="Chrome"/>
+  <listeners>
+    <listener class-name="com.task.Transformer"/>
+  </listeners>
+  <test name="Test(failed)">
+    <parameter name="browser" value="Chrome"/>
     <classes>
-      <class name="com.task.Flipkart">
+      <class name="com.task.Amazon">
         <methods>
-          <include name="login"/>
-          <include name="windows"/>
-          <include name="afterClass"/>
-          <include name="afterMethod"/>
-          <include name="getText"/>
-          <include name="beforeClass"/>
-          <include name="search" invocation-numbers="0"/>
+          <include name="search"/>
           <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
         </methods>
-      </class> <!-- com.task.Flipkart -->
+      </class> <!-- com.task.Amazon -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -3,18 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.task.Flipkart">
+      <class name="com.task.Amazon">
         <methods>
-          <include name="login"/>
-          <include name="windows"/>
-          <include name="afterClass"/>
-          <include name="afterMethod"/>
-          <include name="getText"/>
-          <include name="beforeClass"/>
-          <include name="search" invocation-numbers="0"/>
-          <include name="beforeMethod"/>
+          <include name="search"/>
         </methods>
-      </class> <!-- com.task.Flipkart -->
+      </class> <!-- com.task.Amazon -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

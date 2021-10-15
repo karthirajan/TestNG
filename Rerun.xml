@@ -1,0 +1,11 @@
+<suite name="Suite">
+  <listeners>
+    <listener class-name = "com.task.Transformer"/>
+  </listeners>
+  <test name="Test">
+  <parameter name = "browser"  value = "Chrome"/>
+     <classes>
+      <class name="com.task.Amazon"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

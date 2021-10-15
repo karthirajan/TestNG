@@ -1,117 +1,243 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="5" passed="5">
+<testng-results skipped="3" failed="1" total="4" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="56299" started-at="2021-10-15T03:10:55Z" finished-at="2021-10-15T03:11:51Z">
+  <suite name="Suite" duration-ms="9619" started-at="2021-10-15T10:55:07Z" finished-at="2021-10-15T10:55:16Z">
     <groups>
       <group name="smoke">
-        <method signature="Amazon.search()[pri:0, instance:com.task.Amazon@c038203]" name="search" class="com.task.Amazon"/>
-        <method signature="Flipkart.getText()[pri:2, instance:com.task.Flipkart@29ee9faa]" name="getText" class="com.task.Flipkart"/>
-        <method signature="Flipkart.login(java.lang.String, java.lang.String)[pri:-1, instance:com.task.Flipkart@29ee9faa]" name="login" class="com.task.Flipkart"/>
-        <method signature="Flipkart.search(java.lang.String)[pri:1, instance:com.task.Flipkart@29ee9faa]" name="search" class="com.task.Flipkart"/>
-        <method signature="Flipkart.windows()[pri:3, instance:com.task.Flipkart@29ee9faa]" name="windows" class="com.task.Flipkart"/>
+        <method signature="Amazon.search()[pri:0, instance:com.task.Amazon@457e2f02]" name="search" class="com.task.Amazon"/>
       </group> <!-- smoke -->
     </groups>
-    <test name="Test" duration-ms="56299" started-at="2021-10-15T03:10:55Z" finished-at="2021-10-15T03:11:51Z">
+    <test name="Test" duration-ms="9619" started-at="2021-10-15T10:55:07Z" finished-at="2021-10-15T10:55:16Z">
       <class name="com.task.Amazon">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.task.Amazon@c038203]" name="beforeClass" is-config="true" duration-ms="7918" started-at="2021-10-15T11:11:35Z" finished-at="2021-10-15T11:11:43Z">
+        <test-method status="PASS" signature="beforeClass(java.lang.String)[pri:0, instance:com.task.Amazon@457e2f02]" name="beforeClass" is-config="true" duration-ms="8588" started-at="2021-10-15T18:55:07Z" finished-at="2021-10-15T18:55:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.task.Amazon@c038203]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-10-15T11:11:43Z" finished-at="2021-10-15T11:11:43Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.task.Amazon@457e2f02]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-10-15T18:55:15Z" finished-at="2021-10-15T18:55:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="search()[pri:0, instance:com.task.Amazon@c038203]" name="search" duration-ms="7183" started-at="2021-10-15T11:11:43Z" finished-at="2021-10-15T11:11:50Z">
+        <test-method status="SKIP" signature="search()[pri:0, instance:com.task.Amazon@457e2f02]" name="search" duration-ms="20" started-at="2021-10-15T18:55:15Z" finished-at="2021-10-15T18:55:15Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [java] but found [welcome]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [java] but found [welcome]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at com.task.Amazon.search(Amazon.java:89)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:746)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
+	at org.testng.TestNG.runSuites(TestNG.java:1104)
+	at org.testng.TestNG.run(TestNG.java:1076)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- search -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.task.Amazon@c038203]" name="afterMethod" is-config="true" duration-ms="0" started-at="2021-10-15T11:11:50Z" finished-at="2021-10-15T11:11:50Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.task.Amazon@457e2f02]" name="afterMethod" is-config="true" duration-ms="0" started-at="2021-10-15T18:55:15Z" finished-at="2021-10-15T18:55:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.task.Amazon@c038203]" name="afterClass" is-config="true" duration-ms="923" started-at="2021-10-15T11:11:50Z" finished-at="2021-10-15T11:11:51Z">
+        <test-method status="SKIP" signature="search()[pri:0, instance:com.task.Amazon@457e2f02]" name="search" duration-ms="4" started-at="2021-10-15T18:55:15Z" finished-at="2021-10-15T18:55:15Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [java] but found [welcome]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [java] but found [welcome]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at com.task.Amazon.search(Amazon.java:89)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:958)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:746)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
+	at org.testng.TestNG.runSuites(TestNG.java:1104)
+	at org.testng.TestNG.run(TestNG.java:1076)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.task.Amazon@457e2f02]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-10-15T18:55:15Z" finished-at="2021-10-15T18:55:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.task.Amazon@457e2f02]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-10-15T18:55:15Z" finished-at="2021-10-15T18:55:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.task.Amazon@457e2f02]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-10-15T18:55:15Z" finished-at="2021-10-15T18:55:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="search()[pri:0, instance:com.task.Amazon@457e2f02]" name="search" duration-ms="5" started-at="2021-10-15T18:55:15Z" finished-at="2021-10-15T18:55:15Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [java] but found [welcome]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [java] but found [welcome]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at com.task.Amazon.search(Amazon.java:89)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:958)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:746)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
+	at org.testng.TestNG.runSuites(TestNG.java:1104)
+	at org.testng.TestNG.run(TestNG.java:1076)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.task.Amazon@457e2f02]" name="afterMethod" is-config="true" duration-ms="6" started-at="2021-10-15T18:55:15Z" finished-at="2021-10-15T18:55:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.task.Amazon@457e2f02]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-10-15T18:55:15Z" finished-at="2021-10-15T18:55:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="search()[pri:0, instance:com.task.Amazon@457e2f02]" name="search" duration-ms="3" started-at="2021-10-15T18:55:15Z" finished-at="2021-10-15T18:55:15Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [java] but found [welcome]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [java] but found [welcome]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at com.task.Amazon.search(Amazon.java:89)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:958)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:746)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
+	at org.testng.TestNG.runSuites(TestNG.java:1104)
+	at org.testng.TestNG.run(TestNG.java:1076)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.task.Amazon@457e2f02]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-10-15T18:55:15Z" finished-at="2021-10-15T18:55:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.task.Amazon@457e2f02]" name="afterClass" is-config="true" duration-ms="896" started-at="2021-10-15T18:55:15Z" finished-at="2021-10-15T18:55:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- com.task.Amazon -->
-      <class name="com.task.Flipkart">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.task.Flipkart@29ee9faa]" name="beforeClass" is-config="true" duration-ms="10089" started-at="2021-10-15T11:10:55Z" finished-at="2021-10-15T11:11:05Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.task.Flipkart@29ee9faa]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-10-15T11:11:05Z" finished-at="2021-10-15T11:11:05Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:-1, instance:com.task.Flipkart@29ee9faa]" name="login" duration-ms="2559" started-at="2021-10-15T11:11:05Z" finished-at="2021-10-15T11:11:08Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[9597666445]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[vijay1995]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.task.Flipkart@29ee9faa]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-10-15T11:11:08Z" finished-at="2021-10-15T11:11:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="search(java.lang.String)[pri:1, instance:com.task.Flipkart@29ee9faa]" name="search" duration-ms="3720" started-at="2021-10-15T11:11:08Z" data-provider="mobileName" finished-at="2021-10-15T11:11:11Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[reamle c21y black]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- search -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.task.Flipkart@29ee9faa]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-10-15T11:11:08Z" finished-at="2021-10-15T11:11:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.task.Flipkart@29ee9faa]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-10-15T11:11:11Z" finished-at="2021-10-15T11:11:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.task.Flipkart@29ee9faa]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-10-15T11:11:11Z" finished-at="2021-10-15T11:11:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="getText()[pri:2, instance:com.task.Flipkart@29ee9faa]" name="getText" duration-ms="6228" started-at="2021-10-15T11:11:11Z" finished-at="2021-10-15T11:11:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getText -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.task.Flipkart@29ee9faa]" name="afterMethod" is-config="true" duration-ms="5" started-at="2021-10-15T11:11:18Z" finished-at="2021-10-15T11:11:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.task.Flipkart@29ee9faa]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-10-15T11:11:18Z" finished-at="2021-10-15T11:11:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="windows()[pri:3, instance:com.task.Flipkart@29ee9faa]" name="windows" duration-ms="16710" started-at="2021-10-15T11:11:18Z" finished-at="2021-10-15T11:11:34Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- windows -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.task.Flipkart@29ee9faa]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-10-15T11:11:34Z" finished-at="2021-10-15T11:11:34Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.task.Flipkart@29ee9faa]" name="afterClass" is-config="true" duration-ms="900" started-at="2021-10-15T11:11:34Z" finished-at="2021-10-15T11:11:35Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.task.Flipkart -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
